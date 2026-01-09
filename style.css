@@ -1,0 +1,80 @@
+/* .boxes{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: palevioletred;
+    color: white;
+    width: 200px;
+}
+.box1{
+    flex-basis: 400px;
+    flex-shrink: 0;
+} */
+
+.box{
+    background-color: palevioletred;
+    color: white;
+}
+.boxes{
+    display: grid;
+    /* grid-template-columns: repeat(4,300px); */
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 10px;
+    grid-template-rows: 250px 250px 250px ;
+}
+
+
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "h h h"
+    "s c1 c1"
+    "s c2 c3"
+    "f f f";
+    gap: 10px;
+}
+.header{
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+.sidebar{
+    grid-area: s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+}
+.content1{
+    grid-area: c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.content2{
+    grid-area: c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+.content3{
+    grid-area: c3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+}
+.footer{
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
