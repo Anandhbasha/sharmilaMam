@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heroContainer{
+    background: linear-gradient(#ffffff6e, #1105056b), url(./download.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+.navContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top:30px;
+    width: 90%;
+}
+.mainContainer{
+    width: 90%;
+}
+.mainContainer>h1>p{
+    width: 500px;
+}
+.navLinks{
+    display: flex;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+    position: relative;
+}
+a:hover{
+    color: blueviolet;
+}
+a::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 25px;
+    height: 3px;
+    width: 0%;
+    background-color: rgb(0, 77, 74);
+    transition: width 0.3s ease;
+}
+a:hover::after{
+width: 100%;
+}
+button{
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.para{
+    padding-top: 50px;
+}
+.btn{
+    padding-top: 50px;
+}
+.famousPlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.places{
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.placeImg{
+    width: 100%;
+}
+.placeImg >img{
+    width: 100%;
+}
+.firstRow,.secondRow{
+    display: flex;
+    gap: 30px;
+    padding-top: 50px;
+}
