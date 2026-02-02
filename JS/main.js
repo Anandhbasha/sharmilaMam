@@ -116,16 +116,16 @@
 
 // logical opeartor
 // &&  And Operator
-let age =16
-let loc = "KA"
+// let age =16
+// let loc = "KA"
 
-console.log(age>=18 && loc==="TN");
+// console.log(age>=18 && loc==="TN");
 
 
-// || or Operator
-console.log(age>18 || loc==="TN");
-// ! Not Operator
-console.log(10!=10);
+// // || or Operator
+// console.log(age>18 || loc==="TN");
+// // ! Not Operator
+// console.log(10!=10);
 
 
 // assignmet operator
@@ -164,28 +164,88 @@ console.log(10!=10);
     
 // }
 
-// nested conditions
-let age =20
-let natinality ="Indian"
-let State="KE"
+// // nested conditions
+// let age =20
+// let natinality ="Indian"
+// let State="KE"
 
-if(age>=18){
-    if(natinality==="Indian"){
-        if(State==="TN"){
-            console.log("Eligible to Vote in TamilNadu");            
-        }
-        else{
-            console.log("Not eligible because of State");
+// if(age>=18){
+//     if(natinality==="Indian"){
+//         if(State==="TN"){
+//             console.log("Eligible to Vote in TamilNadu");            
+//         }
+//         else{
+//             console.log("Not eligible because of State");
             
-        }
-    }
-    else{
-        console.log("Not eligible because of Nationality");
+//         }
+//     }
+//     else{
+//         console.log("Not eligible because of Nationality");
         
-    }
+//     }
 
-}
-else{
-        console.log("Not eligible because of Age");
+// }
+// else{
+//         console.log("Not eligible because of Age");
         
+// }
+
+// switch
+// switch(condition){
+//     case 1:
+//         console.log("");
+        
+// }
+
+// let today = new Date()
+// const day = today.getDay()
+
+// switch(day){
+//     case 0:
+//         console.log("Today is Sunday");
+//         break
+//     case 1:
+//         console.log("Today is Monday");
+//         break
+//     case 2:
+//         console.log("Today is Tuesday");
+//         break
+//     case 3:
+//         console.log("Today is Wednesday");
+//         break
+//     case 4:
+//         console.log("Today is Thursday");
+//         break
+//     case 5:
+//         console.log("Today is Friday");
+//         break
+//     default:
+//         console.log("Today is Saturday")        
+// }
+
+// looping Statements
+// while
+// let a=0
+// while(a<11){
+//     console.log(a++);    
+// }
+
+let array = [20,40,60,80,100]
+// console.log(array[0]);
+// console.log(array[1]);
+// console.log(array[2]);
+// console.log(array[3]);
+// console.log(array[4]);
+let b=0
+let len = array.length
+while(b<len){
+    console.log(array[b]);
+    b++
 }
+
+// do while
+// for
+    // for
+    // for of
+    // for in
+    // foreach
