@@ -230,22 +230,64 @@
 //     console.log(a++);    
 // }
 
-let array = [20,40,60,80,100]
+// let array = [20,40,60,80,100]
 // console.log(array[0]);
 // console.log(array[1]);
 // console.log(array[2]);
 // console.log(array[3]);
 // console.log(array[4]);
-let b=0
-let len = array.length
-while(b<len){
-    console.log(array[b]);
-    b++
+// let b=0
+// let len = array.length
+// while(b<len){
+//     console.log(array[b]);
+//     b++
+// }
+
+// let array = [20,40,60,80,100]
+// let count = 0
+// while(count<=array.length-1) {
+//     ++count //1 2 3 4 5
+    
+// }
+
+let a =1
+let b =2
+
+while(b<11){
+    a=a+b  //15
+    b++ //6
 }
+console.log(a);
+
+// console.log(count)//while(0<5){ ++count = 1  while(1<5) ++count =2  while(2<5) 3 4 5
+
 
 // do while
+// do{
+// console.log("Do while");
+
+// }while(5>10)
 // for
     // for
-    // for of
-    // for in
+    let array = [20,40,60,80,100]
+    // for(let i=0;i<array.length;i++){
+    //     console.log(array[i]);        
+    // }
+    // // for of
+    // for(let i of array){
+    //     console.log(i);        
+    // }
+    // // for in
+    // for(let i in array){
+    //     console.log(array[i]);        
+    // }
     // foreach
+    // array.forEach((item)=>console.log(item))
+    // map
+    let count = 0
+    array.map((item)=>{
+        ++count
+    }
+    )
+    console.log(count);
+    
