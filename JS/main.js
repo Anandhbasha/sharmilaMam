@@ -292,7 +292,7 @@
     // console.log(count);
 
 // let a = 1
-let array = [20,40,60,80,100,10]
+// let array = [20,40,60,80,100,10]
 // let max = array[0] //20
 
 // while(a<array.length){
@@ -301,8 +301,61 @@ let array = [20,40,60,80,100,10]
 // }
 // console.log(max);
 
-let max = array[0]
-array.map((item)=>{
-    max = item>max?item:max
-})
-console.log(max);
+// let max = array[0]
+// array.map((item)=>{
+//     max = item>max?item:max
+// })
+// console.log(max);
+
+
+
+// functions
+// console.log(add(80,90));
+
+// function add(a,b){
+//     return a+b    
+// }
+
+// console.log(add(60,80));
+
+// types
+// arrow function
+// let x = ()=>console.log("Hello")
+
+// x()
+
+// array methods
+// reduce
+let array = [20,40,60,77,100,10]
+
+// let sum = 0 
+
+// sum = array.reduce((x,y)=>x+y) 
+// console.log(sum);
+
+
+// filter
+// console.log(array.filter((x)=>x%2!=0));
+
+// String
+let userName = "Sharmila" //
+
+// S
+// Sh
+// Sha
+// Sharmila
+let fullName = ""
+// for(let x of userName){
+//     fullName = x+fullName  
+//     console.log(fullName); 
+// }
+
+for (let x=userName.length-1;x>=0;x--){
+    fullName = fullName+userName[x]  
+    console.log(fullName);
+}
+
+
+
+
+
