@@ -248,16 +248,16 @@
 // while(count<=array.length-1) {
 //     ++count //1 2 3 4 5
     
+// // }
+
+// let a =1
+// let b =2
+
+// while(b<11){
+//     a=a+b  //15
+//     b++ //6
 // }
-
-let a =1
-let b =2
-
-while(b<11){
-    a=a+b  //15
-    b++ //6
-}
-console.log(a);
+// console.log(a);
 
 // console.log(count)//while(0<5){ ++count = 1  while(1<5) ++count =2  while(2<5) 3 4 5
 
@@ -269,7 +269,7 @@ console.log(a);
 // }while(5>10)
 // for
     // for
-    let array = [20,40,60,80,100]
+    // let array = [20,40,60,80,100]
     // for(let i=0;i<array.length;i++){
     //     console.log(array[i]);        
     // }
@@ -284,10 +284,25 @@ console.log(a);
     // foreach
     // array.forEach((item)=>console.log(item))
     // map
-    let count = 0
-    array.map((item)=>{
-        ++count
-    }
-    )
-    console.log(count);
-    
+    // let count = 0
+    // array.map((item)=>{
+    //     ++count
+    // }
+    // )
+    // console.log(count);
+
+// let a = 1
+let array = [20,40,60,80,100,10]
+// let max = array[0] //20
+
+// while(a<array.length){
+//     max = array[a]> max?array[a]:max //40 >20 60 >40
+//     a++
+// }
+// console.log(max);
+
+let max = array[0]
+array.map((item)=>{
+    max = item>max?item:max
+})
+console.log(max);
