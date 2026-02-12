@@ -303,7 +303,7 @@
 
 // let max = array[0]
 // array.map((item)=>{
-//     max = item>max?item:max
+//     max = item>max?item:max   
 // })
 // console.log(max);
 
@@ -326,7 +326,7 @@
 
 // array methods
 // reduce
-let array = [20,40,60,77,100,10]
+// let array = [20,40,60,77,100,10]
 
 // let sum = 0 
 
@@ -338,24 +338,86 @@ let array = [20,40,60,77,100,10]
 // console.log(array.filter((x)=>x%2!=0));
 
 // String
-let userName = "Sharmila" //
+// let userName = "Sharmila" //
 
 // S
 // Sh
 // Sha
 // Sharmila
-let fullName = ""
+// let fullName = ""
 // for(let x of userName){
 //     fullName = x+fullName  
 //     console.log(fullName); 
 // }
 
-for (let x=userName.length-1;x>=0;x--){
-    fullName = fullName+userName[x]  
-    console.log(fullName);
-}
+// for (let x=userName.length-1;x>=0;x--){
+//     fullName = fullName+userName[x]  
+//     console.log(fullName);
+// }
+
+// arrayMethods
+// // push
+// let arr = [50,66,77,588,5578]
+// arr.push(8000)
+// console.log(arr);
+// // pop
+// arr.pop()
+// console.log(arr);
+// // shift
+// arr.shift()
+// console.log(arr);
+// // unshift
+// arr.unshift(423)
+// console.log(arr);
+// // slice
+// let sliced = arr.slice(0,3)
+// console.log(sliced);
+
+// // splice
+// arr.splice(5,0,500)
+// console.log(arr);
+
+// // sort
+// let arr1 = [15,18,19,14,12,11]
+// arr1.sort()
+// console.log(arr1);
+
+// let fruits = ["apple","cherry","kiwi","banana","orange"]
+// fruits.sort()
+// console.log(fruits);
+
+// //find
+// let search = "Apple";
+
+// let finds = fruits.find(item =>item === "Banana".toLowerCase());
+
+// console.log(finds);
 
 
+// //includes
+// console.log(fruits.includes("apple"));
 
+// //indexof
+// console.log(fruits.indexOf("apple"));
 
+// let fruits = ["apple","cherry","kiwi","banana","orange"]
+// let arr1 = [15,18,19,14,12,11]
+// let array = [20,40,60,77,100,10]
+// // spread
+// let newArr = [...arr1,...array,...fruits]
+// console.log(newArr[10]);
 
+// // rest
+// let [first,second,...res] = arr1
+// console.log(res);
+
+// setTimeout
+// setTimeout(()=>{
+//     console.log("Hello");
+    
+// },5000)
+// setInterval
+// setInterval(()=>{
+//     console.log("Hello");
+    
+// },5000)
