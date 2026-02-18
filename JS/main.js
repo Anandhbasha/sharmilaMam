@@ -421,3 +421,21 @@
 //     console.log("Hello");
     
 // },5000)
+
+// async
+
+const fetchData = async()=>{
+    try{
+        const res = await fetch("https://fakestoreapi.com/product")
+        if(!res.ok){
+            throw Error("Unable to connect the API");        
+        }
+            const data =await res.json()
+            console.log(data);
+            
+    }catch(err){
+        console.log(err);   
+    }
+}
+
+fetchData()
