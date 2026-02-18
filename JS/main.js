@@ -424,6 +424,8 @@
 
 // async
 
+// https://fakestoreapi.com/products/
+
 const fetchData = async()=>{
     try{
         const res = await fetch("https://fakestoreapi.com/product")
