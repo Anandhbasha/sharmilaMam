@@ -2,6 +2,8 @@
 // variable declaration
 // var
 
+// const { use } = require("react");
+
 // var a =10
 // console.log("Hello");
 // alert("Hello")
@@ -426,18 +428,40 @@
 
 // https://fakestoreapi.com/products/
 
-const fetchData = async()=>{
-    try{
-        const res = await fetch("https://fakestoreapi.com/product")
-        if(!res.ok){
-            throw Error("Unable to connect the API");        
-        }
-            const data =await res.json()
-            console.log(data);
+// const fetchData = async()=>{
+//     try{
+//         const res = await fetch("https://fakestoreapi.com/product")
+//         if(!res.ok){
+//             throw Error("Unable to connect the API");        
+//         }
+//             const data =await res.json()
+//             console.log(data);
             
-    }catch(err){
-        console.log(err);   
-    }
-}
+//     }catch(err){
+//         console.log(err);   
+//     }
+// }
 
-fetchData()
+// fetchData()
+
+// events
+// onclick
+// let button = document.getElementById("btn");
+
+// // btn.addEventListener("click", () => {
+// //     alert("Button Clicked");
+// // });
+
+// const add =(a,b)=>{
+//     console.log(a+b);    
+// }
+// onchange
+
+let userName = document.getElementById("userName")
+let password = document.getElementById("password")
+
+const login = ()=>{
+    console.log(userName.value);
+    console.log(password.value);
+    
+}
