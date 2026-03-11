@@ -1,0 +1,7 @@
+.h1::first-letter{
+  color: red;
+}
+
+.h1::last-letter{
+  color: red;
+}
