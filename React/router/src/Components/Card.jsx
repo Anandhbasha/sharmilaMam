@@ -1,17 +1,21 @@
-import React from 'react'
-import shirt from "../assets/Images/Shirts.jpg"
+import React, { useContext } from 'react'
+import { PassingValue } from '../App'
 
-const Card = () => {
+const Card = ({prodName,prodPrice,prodDesc,Image}) => {
+  const {setCount} = useContext(PassingValue)
+  const addCount = ()=>{
+    setCount((prev)=>++prev)
+  }
   return (
     <div className='Card'>
         <div className='cardTop'>
-            <img src={shirt}></img>
+            <img src={Image}></img>
         </div>
         <div className='cardBtm'>
-            <h2>Product Name</h2>
-            <h2>Product Price</h2>
-            <h2>Product Desc</h2>
-            <button>Add To Cart</button>
+            <h2>{prodName}</h2>
+            <h2>{prodPrice}</h2>
+            <h2>{prodDesc}</h2>
+            <button onClick={addCount}>Add To Cart</button>
         </div>
     </div>
   )
