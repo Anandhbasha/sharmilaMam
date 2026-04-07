@@ -1,12 +1,12 @@
-import MCas from "./assets/Images/Cas.Webp"
-import TshirtM from "./assets/Images/Tshirt.jpg"
-import MFor from "./assets/Images/formal.jpg"
-import WTop from "./assets/Images/tops.jpg"
-import Wlegg from "./assets/Images/leggin.jpg"
-import Wshirt from "./assets/Images/formalwomen.jpg"
-import kid1 from "./assets/Images/kids1.jpg"
-import kid2 from "./assets/Images/frogKids.jpg"
-import kid3 from "./assets/Images/tho.jpg"
+import MCas from "../assets/Images/Cas.Webp"
+import TshirtM from "../assets/Images/Tshirt.jpg"
+import MFor from "../assets/Images/formal.jpg"
+import WTop from "../assets/Images/tops.jpg"
+import Wlegg from "../assets/Images/leggin.jpg"
+import Wshirt from "../assets/Images/formalwomen.jpg"
+import kid1 from "../assets/Images/kids1.jpg"
+import kid2 from "../assets/Images/frogKids.jpg"
+import kid3 from "../assets/Images/tho.jpg"
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
@@ -78,10 +78,9 @@ const initialState = {
       ]
 }
 
-const productSlice = createSlice({
+export const productSlice = createSlice({
     name:"Product",
     initialState,
     reducers:{}
 })
 
-export default productSlice.reducer
