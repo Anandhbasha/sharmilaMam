@@ -12,6 +12,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     Products :[
         {
+          id:1,
           prodCat:"Mens",
           prodName:"Casual Shirt",
           prodPrice:500,
@@ -19,6 +20,7 @@ const initialState = {
           Image:MCas
         },
         {
+          id:2,
           prodCat:"Mens",
           prodName:"Formal Shirt",
           prodPrice:400,
@@ -26,6 +28,7 @@ const initialState = {
           Image:MFor
         },
         {
+          id:3,
           prodCat:"Mens",
           prodName:"Casual TShirt",
           prodPrice:300,
@@ -33,6 +36,7 @@ const initialState = {
            Image:TshirtM
         },
         {
+          id:4,
           prodCat:"Womens",
           prodName:"Formal Shirt",
           prodPrice:600,
@@ -40,6 +44,7 @@ const initialState = {
           Image:Wshirt
         },
         {
+          id:5,
           prodCat:"Womens",
           prodName:"Tops",
           prodPrice:200,
@@ -47,6 +52,7 @@ const initialState = {
           Image:WTop
         },
         {
+          id:6,
           prodCat:"Womens",
           prodName:"Leggins",
           prodPrice:150,
@@ -54,6 +60,7 @@ const initialState = {
           Image:Wlegg
         },
         {
+          id:7,
           prodCat:"Kids",
           prodName:"Dhoththi",
           prodPrice:200,
@@ -61,6 +68,7 @@ const initialState = {
           Image:kid1
         },
         {
+          id:8,
           prodCat:"Kids",
           prodName:"Frogs",
           prodPrice:200,
@@ -68,6 +76,7 @@ const initialState = {
           Image:kid2
         },
         {
+          id:9,
           prodCat:"Kids",
           prodName:"Set T Shirts",
           prodPrice:150,

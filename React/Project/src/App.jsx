@@ -8,12 +8,15 @@ import AllProducts from './Pages/AllProducts'
 import Mens from './Pages/Mens'
 import Womens from './Pages/Womens'
 import Kids from './Pages/Kids'
+import ProductDetails from './Components/ProductDetails'
+import CartSidebar from './Components/CartSidebar'
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className='App'>
         <Navbar/>
+        <CartSidebar/>
       </div>
       <Routes>
         <Route path='/login' element={<Login/>}/>
@@ -21,6 +24,7 @@ const App = () => {
         <Route path='/mens' element={<ProtectedRoute><Mens/></ProtectedRoute>}/>
         <Route path='/womens' element={<ProtectedRoute><Womens/></ProtectedRoute>}/>
         <Route path='/kids' element={<ProtectedRoute><Kids/> </ProtectedRoute>}/>
+        <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
   )

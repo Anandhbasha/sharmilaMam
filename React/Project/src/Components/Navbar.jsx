@@ -1,7 +1,9 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router"
+import { toggleCart } from "../Slices/CartSlice"
 
 const Navbar = () => {
+  const dispatch = useDispatch()
   const cartItem = useSelector((state)=>state.Cart.cartItem)
   return (
     <div className='Navbar'>
@@ -9,7 +11,9 @@ const Navbar = () => {
         <Link to='/mens'>Mens</Link>
         <Link to='/womens'>Womens</Link>
         <Link to='/kids'>Kids</Link>
-        <h2>{cartItem.length}</h2>
+        <h2 onClick={() => dispatch(toggleCart())} style={{cursor:"pointer"}}>
+          {cartItem.length}
+        </h2>
     </div>
   )
 }
