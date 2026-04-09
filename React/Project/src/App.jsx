@@ -10,6 +10,7 @@ import Womens from './Pages/Womens'
 import Kids from './Pages/Kids'
 import ProductDetails from './Components/ProductDetails'
 import CartSidebar from './Components/CartSidebar'
+import AddProduct from './Components/AddProduct'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/womens' element={<ProtectedRoute><Womens/></ProtectedRoute>}/>
         <Route path='/kids' element={<ProtectedRoute><Kids/> </ProtectedRoute>}/>
         <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/addNew" element={<ProtectedRoute><AddProduct /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
   )

@@ -90,6 +90,12 @@ const initialState = {
 export const productSlice = createSlice({
     name:"Product",
     initialState,
-    reducers:{}
+    reducers:{
+      addProduct:(state,action)=>{
+        state.Products.push(action.payload)
+      }
+    }
 })
 
+
+export const {addProduct} = productSlice.actions
