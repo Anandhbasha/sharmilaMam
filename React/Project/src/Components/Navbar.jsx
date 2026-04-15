@@ -5,13 +5,16 @@ import { toggleCart } from "../Slices/CartSlice"
 const Navbar = () => {
   const dispatch = useDispatch()
   const cartItem = useSelector((state)=>state.Cart.cartItem)
+  const { isLoggedIn, isAdmin } = useSelector((state) => state.Auth)
   return (
     <div className='Navbar'>
         <Link to='/'>AllProducts</Link>
         <Link to='/mens'>Mens</Link>
         <Link to='/womens'>Womens</Link>
         <Link to='/kids'>Kids</Link>
-        <Link to='/addNew'>Add Product</Link>
+        {isLoggedIn && isAdmin && (
+        <Link to="/addNew">Add Product</Link>
+      )}
         <h2 onClick={() => dispatch(toggleCart())} style={{cursor:"pointer"}}>
           {cartItem.length}
         </h2>

@@ -14,7 +14,8 @@ const Card = ({ id, prodName, prodPrice, prodDesc, Image }) => {
     <div 
       className='Card'
       onClick={() => navigate(`/product/${id}`)}
-    >//product/1
+    >
+      {/* //product/1 */}
       <div className='cardTop'>
         <img src={Image} alt={prodName} />
       </div>
