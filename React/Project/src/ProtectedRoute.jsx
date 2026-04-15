@@ -1,10 +1,18 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { Navigate } from 'react-router';
+import { useSelector } from "react-redux"
+import { Navigate } from "react-router"
 
-const ProtectedRoute = ({children}) => {
-    const isLoggedIn = useSelector((state)=>state.Auth.isLoggedIn);
-  return isLoggedIn ? children:<Navigate to="/login" />
+const ProtectedRoute = ({ children, adminOnly }) => {
+  const { isLoggedIn, isAdmin } = useSelector((state) => state.auth)
+
+  if (!isLoggedIn) {
+    return <Navigate to="/login" />
+  }
+
+  if (adminOnly && !isAdmin) {
+    return <h2>Access Denied</h2>
+  }
+
+  return children
 }
 
 export default ProtectedRoute

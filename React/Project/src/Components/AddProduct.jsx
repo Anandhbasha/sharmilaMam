@@ -12,14 +12,20 @@ const AddProduct = () => {
         Image:""
     })
     const handleChange = (e)=>{
-    const { name, value, files } = e.target
+  const { name, value, files } = e.target
 
+  if (files) {
     setFormData({
-        ...formData,
-        [name]: files ? files[0] : value
+      ...formData,
+      [name]: URL.createObjectURL(files[0])
     })
-
-    }
+  } else {
+    setFormData({
+      ...formData,
+      [name]: value
+    })
+  }
+}
     const handleSumbit = (e)=>{
         e.preventDefault()
         const newProd = {
@@ -42,7 +48,7 @@ const AddProduct = () => {
             <input type='text' name='prodCat' onChange={handleChange} placeholder='category' value={formData.prodCat}></input>
             <input type='text' name='prodName' onChange={handleChange} placeholder='product Name' value={formData.prodName}></input>
             <input type='number' name='prodPrice' onChange={handleChange} placeholder='price' value={formData.prodPrice}></input>
-            <input type='text' name='prodDesc' onChange={handleChange} placeholder='category' value={formData.prodDesc}></input>
+            <input type='text' name='prodDesc' onChange={handleChange} placeholder='Desc' value={formData.prodDesc}></input>
             <input type='file'name='Image'  onChange={handleChange} />
             <button type='submit'>Add Product</button>
         </form>

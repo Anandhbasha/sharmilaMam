@@ -26,7 +26,7 @@ const App = () => {
         <Route path='/womens' element={<ProtectedRoute><Womens/></ProtectedRoute>}/>
         <Route path='/kids' element={<ProtectedRoute><Kids/> </ProtectedRoute>}/>
         <Route path="/product/:id" element={<ProductDetails />} />
-        <Route path="/addNew" element={<ProtectedRoute><AddProduct /></ProtectedRoute>} />
+        <Route path="/addNew" element={<ProtectedRoute adminOnly={true}><AddProduct /></ProtectedRoute>} />
       </Routes>
     </BrowserRouter>
   )

@@ -1,21 +1,32 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-    isLoggedIn:false
+  isLoggedIn: false,
+  isAdmin: false
 }
 
 const authSlice = createSlice({
-    name:"Auth",
-    initialState,
-    reducers:{
-        login:(state)=>{
-            state.isLoggedIn=true
-        },
-        logout:(state)=>{
-            state.isLoggedIn=false
-        }
+  name: "Auth",
+  initialState,
+  reducers: {
+    login: (state, action) => {
+      const { username, password } = action.payload
+
+      // 🔥 Admin check
+      if (username === "admin" && password === "1234") {
+        state.isLoggedIn = true
+        state.isAdmin = true
+      } else {
+        alert("Invalid credentials ❌")
+      }
+    },
+
+    logout: (state) => {
+      state.isLoggedIn = false
+      state.isAdmin = false
     }
+  }
 })
 
-export const {login,logout} = authSlice.actions
+export const { login, logout } = authSlice.actions
 export default authSlice
