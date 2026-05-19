@@ -1,0 +1,46 @@
+/* .slide img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+} */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Make slide fill the container */
+.slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* Arrow buttons */
+.prev, .next {
+  position: absolute !important;   /* force override */
+  top: 50% !important;
+  transform: translateY(-50%);
+
+  z-index: 999;  
+  display: block;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Left */
+.prev {
+  left: 10px;
+}
+
+/* Right */
+.next {
+  right: 10px;
+}

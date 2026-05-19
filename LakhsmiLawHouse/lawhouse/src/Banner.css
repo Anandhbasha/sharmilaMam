@@ -1,0 +1,60 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("./assets/images/bac.jpg"); /* your image */
+  background-size: cover;
+  background-position: center;
+
+  height: 380px;
+  padding: 40px;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+
+}
+.banner1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("./assets/images/org.jpg"); /* your image */
+  background-size: cover;
+  background-position: center;
+
+  height: 380px;
+  padding: 40px;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+
+}
+
+.banner3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("./assets/images/back.jpg"); /* your image */
+  background-size: cover;
+  background-position: center;
+
+  height: 380px;
+  padding: 40px;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+
+}
+
+
+.banner-image{
+    display: flex;
+    gap: 180px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    
+}
+
+.banner-image img {
+  width: 200px;
+}
